@@ -1,0 +1,3 @@
+*.hi      # Haskell
+*.o       # C++, Haskell, Rust
+*.py[cod] # Python
