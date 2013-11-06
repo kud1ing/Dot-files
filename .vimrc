@@ -3,7 +3,7 @@ set backspace=indent,eol,start " backspace over everything
 set nobackup                   " write backup files? no
 set nocompatible               " emulate vi bugs? no
 set encoding=utf-8             " encoding used internally
-set noerrorbells               " no error bell
+set noerrorbells               " error bell? no
 set expandtab                  " convert tabs to spaces? yes
 set fileencodings=utf-8,latin1 " encodings that are tried to exclude
 set gdefault                   " substitute all matches in a line? yes
