@@ -35,8 +35,8 @@ set wildmode=list:full         " command-line completion: show list, use first f
 set nowrap                     " wrap lines? no
 set nowritebackup              " create temporary file while writing? no
 
-setglobal fileencoding=utf-8   " encoding for new files
-
+colorschem darkblue
+setglobal fileencoding=utf-8   " UTF8 for new files
 syntax on                      " syntax highlighing? yes
 
 if has("gui_running")
@@ -44,5 +44,3 @@ if has("gui_running")
 else
     set background=dark        " adapt colors for background
 endif
-
-"colorscheme=slate
