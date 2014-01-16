@@ -1,6 +1,7 @@
 set autoindent                 " auto-indent new lines? yes
 set backspace=indent,eol,start " backspace over everything
 set nobackup                   " write backup files? no
+set clipboard=unnamed          " interact with the system clipboard
 set nocompatible               " emulate vi bugs? no
 set encoding=utf-8             " encoding used internally
 set noerrorbells               " error bell? no
