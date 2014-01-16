@@ -41,8 +41,6 @@ syntax on                      " syntax highlighing? yes
 
 if has("gui_running")
     set background=light       " adapt colors for background
-    set selectmode=mouse,key,cmd
-    set keymodel=
 else
     set background=dark        " adapt colors for background
 endif
