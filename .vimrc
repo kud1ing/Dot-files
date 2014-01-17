@@ -25,7 +25,6 @@ set softtabstop=4              " backspace should remove N spaces
 set nostartofline              " do not jump to first character when paging
 set tabstop=4                  " tab := number of N spaces
 set termencoding=utf-8         " UTF8 in the terminal
-set textwidth=79               " maximum text width
 set undolevels=1000            " N undo levels
 set novisualbell               " no visual bell
 set whichwrap+=<,>,[,]         " allow <Left> and <Right> to wrap around line breaks
