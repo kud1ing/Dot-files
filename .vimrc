@@ -36,7 +36,10 @@ set wildmode=list:full         " command-line completion: show list, use first f
 set nowrap                     " do not wrap lines
 set nowritebackup              " no temporary files
 
-colorschem darkblue
+if version >= 740
+    colorschem darkblue
+endif
+
 setglobal fileencoding=utf-8   " UTF8 for new files
 syntax on                      " syntax highlighing
 
