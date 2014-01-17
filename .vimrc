@@ -1,3 +1,5 @@
+let loaded_matchparen=1        " do not show matching brackets
+
 set autoindent                 " auto-indent new lines
 set backspace=indent,eol,start " backspace over everything
 set nobackup                   " no backup files
@@ -18,7 +20,7 @@ set number                     " show line numbers
 set ruler                      " show cursor position
 set scrolloff=4                " keep N lines off the edges of the screen when scrolling
 set shiftwidth=4               " (auto)indent with N spaces
-set noshowmatch                " do not jump to the matching brackets
+set noshowmatch                " do not jump to the matching bracket
 set showmode                   " show the current mode
 set smartcase                  " override 'ignorecase' if the pattern contains upper case characters
 set softtabstop=4              " backspace should remove N spaces
