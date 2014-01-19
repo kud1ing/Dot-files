@@ -5,7 +5,7 @@ set backspace=indent,eol,start " backspace over everything
 set nobackup                   " no backup files
 set clipboard=unnamed          " interact with the system clipboard
 set nocompatible               " no vi bugs emulation
-set encoding=utf-8             " UTF8 used internally
+set encoding=utf-8             " UTF-8 used internally
 set noerrorbells               " no error bell
 set expandtab                  " convert tabs to spaces
 set fileencodings=utf-8,latin1 " encodings that are tried to exclude
@@ -26,7 +26,7 @@ set smartcase                  " override 'ignorecase' if the pattern contains u
 set softtabstop=4              " backspace should remove N spaces
 set nostartofline              " do not jump to first character when paging
 set tabstop=4                  " tab := number of N spaces
-set termencoding=utf-8         " UTF8 in the terminal
+set termencoding=utf-8         " UTF-8 in the terminal
 set undolevels=1000            " N undo levels
 set novisualbell               " no visual bell
 set whichwrap+=<,>,[,]         " allow <Left> and <Right> to wrap around line breaks
@@ -40,7 +40,7 @@ if version >= 740
     colorschem darkblue
 endif
 
-setglobal fileencoding=utf-8   " UTF8 for new files
+setglobal fileencoding=utf-8   " UTF-8 for new files
 syntax on                      " syntax highlighing
 
 if has("gui_running")
