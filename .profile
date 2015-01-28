@@ -41,22 +41,21 @@ export LESS='-iMn'
 export PAGER='less'
 
 
-# PATH
 if [ $OS == "Darwin" ] ; then
+
+    JAVA_HOME=$(/usr/libexec/java_home)
+
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
     PATH="$PATH:$HOME/.cabal/bin"
     # Ruby GEMs
     PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
-    # Rust
-    PATH="$PATH:$HOME/.rustpkg/bin"
 fi
 
 PATH="$PATH:$HOME/bin"
 
+export JAVA_HOME
 export PATH
-
-
 export PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 export VISUAL="$EDITOR"
