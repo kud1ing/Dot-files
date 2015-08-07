@@ -30,6 +30,11 @@ fi
 
 EDITOR='vim'
 HISTCONTROL='ignoredups' # History: only unique entries
+
+if [ $OS == "Darwin" ] ; then
+    JAVA_HOME=$(/usr/libexec/java_home)
+fi
+
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
 
 # less
@@ -41,9 +46,6 @@ LESS='-iMn'
 PAGER='less'
 
 if [ $OS == "Darwin" ] ; then
-
-    JAVA_HOME=$(/usr/libexec/java_home)
-
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
