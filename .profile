@@ -34,7 +34,7 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
 
 # less
 # -i: ignore case for searches
-# -m: more prompt
+# -M: prompt more verbosely than "more"
 # -n: supress line numbers
 export LESS='-iMn'
 
