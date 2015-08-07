@@ -28,17 +28,17 @@ fi
 
 # ------------------------------------------------------
 
-export EDITOR='vim'
-export HISTCONTROL='ignoredups' # History: only unique entries
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
+EDITOR='vim'
+HISTCONTROL='ignoredups' # History: only unique entries
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
 
 # less
 # -i: ignore case for searches
 # -M: prompt more verbosely than "more"
 # -n: supress line numbers
-export LESS='-iMn'
+LESS='-iMn'
 
-export PAGER='less'
+PAGER='less'
 
 
 if [ $OS == "Darwin" ] ; then
@@ -55,7 +55,12 @@ fi
 
 PATH="$PATH:$HOME/bin"
 
+export EDITOR
+export HISTCONTROL
 export JAVA_HOME
+export LESS
+export LD_LIBRARY_PATH
+export PAGER
 export PATH
 export PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 export VISUAL="$EDITOR"
