@@ -40,7 +40,6 @@ LESS='-iMn'
 
 PAGER='less'
 
-
 if [ $OS == "Darwin" ] ; then
 
     JAVA_HOME=$(/usr/libexec/java_home)
@@ -55,6 +54,10 @@ fi
 
 PATH="$PATH:$HOME/bin"
 
+PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
+
+VISUAL="$EDITOR"
+
 export EDITOR
 export HISTCONTROL
 export JAVA_HOME
@@ -62,5 +65,5 @@ export LESS
 export LD_LIBRARY_PATH
 export PAGER
 export PATH
-export PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
-export VISUAL="$EDITOR"
+export PS1
+export VISUAL
