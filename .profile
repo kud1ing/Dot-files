@@ -52,6 +52,8 @@ if [ $OS == "Darwin" ] ; then
     PATH="$PATH:$HOME/.cabal/bin"
     # Ruby GEMs
     PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
+else
+   PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
 fi
 
 PATH="$PATH:$HOME/bin"
