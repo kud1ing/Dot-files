@@ -46,12 +46,16 @@ LESS='-iMn'
 PAGER='less'
 
 if [ $OS == "Darwin" ] ; then
+    # Gremlin
+    PATH="$PATH:/Applications/apache-gremlin-console-3.1.0-incubating/bin/"
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
     PATH="$PATH:$HOME/.cabal/bin"
     # Ruby GEMs
     PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
+    # Rust Cargo.
+    PATH="$PATH:$HOME/.cargo/bin"
 else
    PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
 fi
