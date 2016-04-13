@@ -28,7 +28,10 @@ fi
 
 # Variables ------------------------------------------------------
 
+# Used by:
+# - `crontab -e`
 EDITOR='vim'
+
 HISTCONTROL='ignoredups' # History: only unique entries
 
 if [ $OS == "Darwin" ] ; then
@@ -43,6 +46,8 @@ LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
 # -n: supress line numbers
 LESS='-iMn'
 
+# Used by:
+# - ???
 PAGER='less'
 
 if [ $OS == "Darwin" ] ; then
