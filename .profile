@@ -46,8 +46,6 @@ LESS='-iMn'
 PAGER='less'
 
 if [ $OS == "Darwin" ] ; then
-    # Gremlin
-    PATH="$PATH:/Applications/apache-gremlin-console-3.1.0-incubating/bin/"
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
