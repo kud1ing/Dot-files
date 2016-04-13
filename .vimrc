@@ -1,5 +1,7 @@
+" Variables:
 let loaded_matchparen=1        " do not show matching brackets
 
+" Options:
 set autoindent                 " auto-indent new lines
 set backspace=indent,eol,start " backspace over everything
 set nobackup                   " no backup files
