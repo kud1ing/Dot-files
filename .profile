@@ -58,7 +58,7 @@ if [ $OS == "Darwin" ] ; then
     # Ruby GEMs
     PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
     # Rust Cargo.
-    PATH="$PATH:$HOME/.cargo/bin"
+    PATH="$HOME/.cargo/bin:$PATH"
 else
    PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
 fi
@@ -79,3 +79,4 @@ export PAGER
 export PATH
 export PS1
 export VISUAL
+
