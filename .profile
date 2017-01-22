@@ -59,6 +59,8 @@ if [ $OS == "Darwin" ] ; then
     PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
     # Rust Cargo.
     PATH="$HOME/.cargo/bin:$PATH"
+    # Xcode
+    PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
 else
    PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
 fi
