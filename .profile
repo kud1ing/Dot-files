@@ -1,6 +1,6 @@
-# This file is read by all Bourn shell (sh) compatible shells.
+# This file is read by all Bourn shell (`sh`) compatible shells.
 
-# Determine OS.
+# Determine the operating system.
 if [ -z $OS ]; then
     OS=`uname`
 fi
@@ -9,17 +9,19 @@ fi
 
 alias ..='cd ..'
 
-# ls
-# -a: show all files, even hidden ones
-# -F: "/"
-# -l: long output like
-
+# `ls`
 if [ $OS == "Darwin" ] ; then
+    # -a: show all files, even hidden ones
+    # -F: "/"
     # -G: colors
+    # -l: long output format
     alias la='ls -alFG'
     alias ll='ls -lFG'
     alias ls='ls -FG'
 else
+    # -a: show all files, even hidden ones
+    # -F: "/"
+    # -l: long output format
     alias la='ls -alF --color=auto'
     alias ll='ls -lF --color=auto'
     alias ls='ls -F'
@@ -32,15 +34,17 @@ fi
 # - `crontab -e`
 EDITOR='vim'
 
-HISTCONTROL='ignoredups' # History: only unique entries
+# History: only unique entries
+HISTCONTROL='ignoredups'
 
+# Java
 if [ $OS == "Darwin" ] ; then
     JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
 
-# less
+# `less`
 # -i: ignore case for searches
 # -M: prompt more verbosely than "more"
 # -n: supress line numbers
@@ -70,6 +74,8 @@ PATH="$PATH:$HOME/bin"
 # Prompt: HOSTNAME (cyan) + ":" + PWD + "$" (green):
 PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 
+# Used by:
+# - ???
 VISUAL="$EDITOR"
 
 export EDITOR
@@ -81,4 +87,3 @@ export PAGER
 export PATH
 export PS1
 export VISUAL
-
