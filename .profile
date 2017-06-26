@@ -36,6 +36,9 @@ fi
 # - `sudoedit`
 EDITOR='vim'
 
+# `git` editor.
+GIT_EDITOR='vim'
+
 # History: only unique entries
 HISTCONTROL='ignoredups'
 
@@ -79,9 +82,10 @@ PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 # Screen-oriented editor.
 # Used by:
 # - ???
-VISUAL="$EDITOR"
+VISUAL="vim"
 
 export EDITOR
+export GIT_EDITOR
 export HISTCONTROL
 export JAVA_HOME
 export LESS
