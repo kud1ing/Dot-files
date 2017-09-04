@@ -42,6 +42,9 @@ GIT_EDITOR='vim'
 # History: only unique entries
 HISTCONTROL='ignoredups'
 
+# No `Homebrew` analytics.
+HOMEBREW_NO_ANALYTICS=1
+
 # Java
 if [ $OS == "Darwin" ] ; then
     JAVA_HOME=$(/usr/libexec/java_home)
@@ -87,6 +90,7 @@ VISUAL="vim"
 export EDITOR
 export GIT_EDITOR
 export HISTCONTROL
+export HOMEBREW_NO_ANALYTICS
 export JAVA_HOME
 export LESS
 export LD_LIBRARY_PATH
