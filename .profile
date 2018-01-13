@@ -68,7 +68,7 @@ if [ $OS == "Darwin" ] ; then
     # Haskell Cabal
     PATH="$PATH:$HOME/.cabal/bin"
     # Ruby GEMs
-    PATH="$PATH:$HOME/.gem/ruby/1.8/bin"
+    PATH="$PATH:$HOME/.gem/ruby/1.8/bin:$HOME/.gem/ruby/2.3.0/bin"
     # Rust Cargo.
     PATH="$HOME/.cargo/bin:$PATH"
     # Xcode
