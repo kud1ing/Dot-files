@@ -66,9 +66,11 @@ if [ $OS == "Darwin" ] ; then
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
-    PATH="$PATH:$HOME/.cabal/bin"
+    PATH="$HOME/.cabal/bin:$PATH"
+    # Python
+    PATH="$HOME/Library/Python/2.7/bin:$PATH"
     # Ruby GEMs
-    PATH="$PATH:$HOME/.gem/ruby/1.8/bin:$HOME/.gem/ruby/2.3.0/bin"
+    PATH="$HOME/.gem/ruby/1.8/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH"
     # Rust Cargo.
     PATH="$HOME/.cargo/bin:$PATH"
     # Xcode
