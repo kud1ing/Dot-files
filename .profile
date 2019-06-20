@@ -81,6 +81,10 @@ fi
 
 PATH="$PATH:$HOME/bin"
 
+if [ $OS == "Darwin" ] ; then
+    PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/libffi/lib/pkgconfig"
+fi
+
 # Prompt: HOSTNAME (cyan) + ":" + PWD + "$" (green):
 PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 
@@ -98,5 +102,6 @@ export LESS
 export LD_LIBRARY_PATH
 export PAGER
 export PATH
+export PKG_CONFIG_PATH
 export PS1
 export VISUAL
