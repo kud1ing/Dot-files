@@ -1,3 +1,1 @@
-# This is the first file which is read by an interactive login BASH.
-
-. "$HOME/.profile"
+Code/GitHub/Dotfiles/.bash_profile
