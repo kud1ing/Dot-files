@@ -10,7 +10,7 @@ fi
 alias ..='cd ..'
 
 # `ls`
-if [ $OS == "Darwin" ] ; then
+if [ $OS = "Darwin" ] ; then
     # -a: show all files, even hidden ones
     # -F: "/"
     # -G: colors
@@ -46,7 +46,7 @@ HISTCONTROL='ignoredups'
 HOMEBREW_NO_ANALYTICS=1
 
 # Java
-if [ $OS == "Darwin" ] ; then
+if [ $OS = "Darwin" ] ; then
     JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
@@ -62,7 +62,7 @@ LESS='-iMn'
 # - ???
 PAGER='less'
 
-if [ $OS == "Darwin" ] ; then
+if [ $OS = "Darwin" ] ; then
     # Homebrew
     PATH="/usr/local/bin:/usr/local/sbin:$PATH"
     # Haskell Cabal
@@ -81,7 +81,7 @@ fi
 
 PATH="$PATH:$HOME/bin"
 
-if [ $OS == "Darwin" ] ; then
+if [ $OS = "Darwin" ] ; then
     PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/libffi/lib/pkgconfig"
 fi
 
