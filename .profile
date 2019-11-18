@@ -85,11 +85,13 @@ if [ $OS = "Darwin" ] ; then
     PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/local/opt/libffi/lib/pkgconfig"
 fi
 
-# Prompt: HOSTNAME (cyan) + ":" + PWD + "$" (green):
+# Prompt ========================================================================================================
+
+# `bash`: HOSTNAME (cyan) + ":" + PWD + "$" (green):
 PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 
-# `zsh`
-PROMPT="%n@%m %d\$ "
+# `zsh`: USERNAME (cyan) + HOSTNAME + PWD + "$"
+PROMPT="%F{cyan}%n%f@%F{green}%m%f %F{blue}%B%~%b%f\$ "
 
 # Screen-oriented editor.
 # Used by:
