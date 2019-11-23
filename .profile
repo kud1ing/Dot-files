@@ -91,7 +91,7 @@ fi
 PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
 
 # `zsh`: USERNAME (cyan) + HOSTNAME + PWD + "$"
-PROMPT="%F{cyan}%n%f@%F{green}%m%f %F{blue}%B%d%b%f\$ "
+PROMPT="%F{cyan}%n%f@%F{green}%m%f %F{blue}%B%~%b%f\$ "
 
 # Screen-oriented editor.
 # Used by:
