@@ -64,19 +64,13 @@ PAGER='less'
 
 if [ $OS = "Darwin" ] ; then
     # Homebrew
-    PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-    # Haskell Cabal
-    PATH="$HOME/.cabal/bin:$PATH"
-    # Python
+    PATH="/usr/local/bin:/usr/local/sbin:$PATH"cd
+    # Python 2.7
     PATH="$HOME/Library/Python/2.7/bin:$PATH"
-    # Ruby GEMs
-    PATH="$HOME/.gem/ruby/1.8/bin:$HOME/.gem/ruby/2.3.0/bin:$PATH"
     # Rust Cargo.
     PATH="$HOME/.cargo/bin:$PATH"
-    # Xcode
-    PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
 else
-   PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
+    PATH=$HOME/frt/bin:$HOME/frt/lib/DiffTool:$HOME/frt/lib/apache-ant/bin:$PATH
 fi
 
 PATH="$PATH:$HOME/bin"
