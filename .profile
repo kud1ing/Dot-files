@@ -64,7 +64,7 @@ PAGER='less'
 
 if [ $OS = "Darwin" ] ; then
     # Homebrew
-    PATH="/usr/local/bin:/usr/local/sbin:$PATH"cd
+    PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"cd
     # Python 2.7
     PATH="$HOME/Library/Python/2.7/bin:$PATH"
     # Rust Cargo.
