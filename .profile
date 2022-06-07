@@ -47,7 +47,7 @@ HOMEBREW_NO_ANALYTICS=1
 
 # Java
 if [ $OS = "Darwin" ] ; then
-    JAVA_HOME=$(/usr/libexec/java_home)
+    #JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib:$HOME/lib"
