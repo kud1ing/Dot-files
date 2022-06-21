@@ -63,6 +63,8 @@ LESS='-iMn'
 PAGER='less'
 
 if [ $OS = "Darwin" ] ; then
+    # Dart
+    PATH="$PATH:$HOME/.pub-cache/bin"
     # Homebrew
     PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"cd
     # Python 2.7
