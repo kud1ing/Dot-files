@@ -66,7 +66,7 @@ if [ $OS = "Darwin" ] ; then
     # Dart
     PATH="$PATH:$HOME/.pub-cache/bin"
     # Homebrew
-    PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"cd
+    PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH"
     # Python 2.7
     PATH="$HOME/Library/Python/2.7/bin:$PATH"
     # Rust Cargo.
